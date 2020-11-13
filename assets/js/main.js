@@ -6,6 +6,63 @@
 
 
 
+
+// //////////////////////////////
+// // metodo 1
+// ////////////////////////////////////////////////////////
+
+// da stabilire km e età:
+//
+// var km = prompt("Quanti km intende fare?");
+// console.log(km);
+//
+// var age = prompt("Quanti anni ha il passeggero?");
+// console.log(age);
+//
+// var prezzoPerKilometro = (0.21);
+// console.log(prezzoPerKilometro);
+//
+// var prezzo = prezzoPerKilometro * km;
+// console.log(prezzo);
+//
+// var scontoMinorenne = prezzo - (prezzo / 100 * 20);
+// console.log(scontoMinorenne);
+//
+// var scontoover65 = prezzo - (prezzo / 100 * 40);
+// console.log(scontoover65);
+//
+// // alert("Il costo del biglietto sarà di : " + prezzo);
+//
+// // applicazioni sconti
+//
+// var scontoMinorenne;
+// if (age < 18) {
+//   console.log("sconto del 20%: ");
+//   alert("Con 'sconto Minorenne' è stato applicato uno sconto del 20%: L'importo attuale è di " + scontoMinorenne + " €")
+// } else {
+//   console.log("Biglietto Standard: " + prezzo);
+// }
+//
+// var prezzoBase;
+// if (18 > age || age < 65) {
+//   console.log("prezzo Standard");
+//   alert("L'importo attuales è di " + prezzo + " €")
+// } else {
+//   console.log("Biglietto Standard: " + prezzo);
+// }
+//
+// var prezzoover65;
+// if (age > 65) {
+//   console.log("Con 'sconto over65' è stato applicato uno sconto del 40%: " + scontoover65);
+//   alert("Con 'sconto Over65' è stato applicato uno sconto del 40%: L'importo attuale è di " + scontoover65 + " €");
+// }  else {
+//   console.log("Biglietto Standard: " + prezzo);
+// }
+
+//////////////////////////////
+// metodo 2
+////////////////////////////////////////////////////////
+
 // da stabilire km e età:
 
 var km = prompt("Quanti km intende fare?");
@@ -26,22 +83,18 @@ console.log(scontoMinorenne);
 var scontoover65 = prezzo - (prezzo / 100 * 40);
 console.log(scontoover65);
 
-//alert("Il costo del biglietto sarà di : " + prezzo);
+// alert("Il costo del biglietto sarà di : " + prezzo);
 
-//applicazioni sconti
+// applicazioni sconti
 
-var prezzoMinorenne;
+var sconti;
 if (age < 18) {
   console.log("sconto del 20%: ");
-  alert("Con 'sconto Minorenne' è stato applicato uno sconto del 20%: L'importo attuale è di " + scontoMinorenne + " €")
-} else {
-  console.log("Biglietto Standard: " + prezzo);
-}
-
-var prezzoover65;
-if (age > 65) {
-  console.log("Con 'sconto over65' è stato applicato uno sconto del 40%: " + scontoover65);
-  alert("Con 'sconto Over65' è stato applicato uno sconto del 40%: L'importo attuale è di " + scontoover65 + " €")
-} else {
-  console.log("Biglietto Standard : " + prezzo);
+  alert("Con 'sconto Minorenne' è stato applicato uno sconto del 20%: L'importo attuale è di " + scontoMinorenne + " €");
+} else if (age > 65) {
+  console.log(" sconto del 40%: ");
+  alert("Con 'sconto Over65' è stato applicato uno sconto del 40%: L'importo attuale è di " + scontoover65 + " €");
+} else{
+  console.log()
+  alert(" L'importo attuale è di " + prezzo + " €");
 }
